@@ -1,0 +1,58 @@
+<project>	
+	<target name="clean-sandbox" >		
+		<delete dir="sandbox"/>
+		<mkdir dir="sandbox"/>	
+	</target>
+	
+	<target name="clean-dist" >		
+		<delete dir="dist"/>		
+	</target>
+	
+   <target  name="package-jar">
+		<ant target="clean-sandbox"/>
+		
+		<unzip dest="sandbox">
+			<fileset dir="artifacts">
+				<include name="${jarName}*.jar" />
+			</fileset>    
+		</unzip>
+		<echo>Using ${env}.properties</echo>
+		<echo>Using ${jarConfig}.${env}.properties</echo>
+		<delete>
+			<fileset dir="sandbox" includes="*.properties"/>
+		</delete>
+		<copy file="../${jarConfig}/src/main/resources/${jarConfig}.${env}.properties"
+			tofile="sandbox/${jarConfig}.properties" />
+		
+		<mkdir dir="dist"/>	
+		<zip destfile="dist/${jarName}-${snapshot}.jar"
+			   basedir="sandbox" />
+	</target>
+	
+	<target  name="package-war">	
+		<ant target="clean-sandbox"/>		
+		<unzip dest="sandbox">
+			<fileset dir="artifacts">
+				<include name="${warName}*.war" />
+			</fileset>    
+		</unzip>
+		<echo>Using ${env}.properties</echo>
+		<echo>Using ${warConfig}.${env}.properties</echo>
+		<delete>
+			<fileset dir="sandbox" includes="WEB-INF/classes/*.properties"/>
+		</delete>
+		<echo>Using log4j.${env}.properties: ${warName}/src/main/resources</echo>
+		<copy file="../${warConfig}/src/main/resources/log4j.${env}.properties"
+			tofile="sandbox/log4j.properties" />
+		<copy file="../${warConfig}/src/main/resources/${warConfig}.${env}.properties"
+			tofile="sandbox/WEB-INF/classes/${warConfig}.properties" />
+			
+		<echo>Copying Jar ${jarName}-${snapshot}.jar from dist</echo>
+		<copy file="dist/${jarName}-${snapshot}.jar"
+			tofile="sandbox/WEB-INF/lib/${jarName}-${snapshot}.jar" />
+			
+		<zip destfile="dist/${warName}-${snapshot}.war"
+			   basedir="sandbox" />	
+	</target>	
+
+</project>

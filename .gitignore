@@ -1,1 +1,17 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
+/sevenforall-security/target
+target
+/sevenforall-filestore/target
+/sevenforall-app/target
+/sevenforall-core/target
+/sevenforall-services/target
+/sevenforall-services/.settings
+/sevenforall-security/.settings
+/sevenforall-rest/.settings
+/sevenforall-filestore/.settings
+/sevenforall-core/.settings
+/sevenforall-app/.settings
+/sevenforall-core/src/test/java/META-INF/*.MF
+/sevenforall-filestore/src/test/java/META-INF/*.MF
+/sevenforall-rest/src/test/java/META-INF/*.MF
+/sevenforall-security/src/test/java/META-INF/*.MF
+/sevenforall-services/src/test/java/META-INF/*.MF
