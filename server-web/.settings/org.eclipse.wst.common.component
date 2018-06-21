@@ -4,19 +4,19 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="realx-core-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-core/server-core">
+        <dependent-module archiveName="server-core-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-core/server-core">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="realx-security-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-security/server-security">
+        <dependent-module archiveName="server-security-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-security/server-security">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="realx-services-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-services/server-services">
+        <dependent-module archiveName="server-services-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-services/server-services">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="realx-rest-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-rest/server-rest">
+        <dependent-module archiveName="server-rest-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-rest/server-rest">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="realx-filestore-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-filestore/server-filestore">
+        <dependent-module archiveName="server-filestore-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-filestore/server-filestore">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="realx"/>

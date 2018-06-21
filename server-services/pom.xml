@@ -5,28 +5,28 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.server</groupId>
-		<artifactId>realx</artifactId>
+		<artifactId>server</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>server-services</artifactId>
-	<name>realx-services</name>
+	<name>server-services</name>
 	<description>Services</description>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
 			<groupId>com.server</groupId>
-			<artifactId>realx-core</artifactId>
-			<version>${realx-core.version}</version>
+			<artifactId>server-core</artifactId>
+			<version>${server-core.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.server</groupId>
-			<artifactId>realx-security</artifactId>
-			<version>${realx-security.version}</version>
+			<artifactId>server-security</artifactId>
+			<version>${server-security.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.server</groupId>
-			<artifactId>realx-filestore</artifactId>
-			<version>${realx-filestore.version}</version>
+			<artifactId>server-filestore</artifactId>
+			<version>${server-filestore.version}</version>
 		</dependency>
 	</dependencies>
 </project>
