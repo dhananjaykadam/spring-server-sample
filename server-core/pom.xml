@@ -8,15 +8,11 @@
 		<artifactId>realx</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>realx-filestore</artifactId>
-	<name>realx-filestore</name>
-	<description>filestore</description>
+	<artifactId>server-core</artifactId>
+	<name>realx-core</name>
+	<description>core logic</description>
 	<url>http://maven.apache.org</url>
-	<dependencies>
-		<dependency>
-			<groupId>com.server</groupId>
-			<artifactId>realx-core</artifactId>
-			<version>${realx-core.version}</version>
-		</dependency>
-	</dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 </project>

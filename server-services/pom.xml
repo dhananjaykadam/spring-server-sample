@@ -8,10 +8,10 @@
 		<artifactId>realx</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>realx-web</artifactId>
-	<packaging>war</packaging>
-	<name>realx-web</name>
-	
+	<artifactId>server-services</artifactId>
+	<name>realx-services</name>
+	<description>Services</description>
+	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
 			<groupId>com.server</groupId>
@@ -22,16 +22,6 @@
 			<groupId>com.server</groupId>
 			<artifactId>realx-security</artifactId>
 			<version>${realx-security.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.server</groupId>
-			<artifactId>realx-services</artifactId>
-			<version>${realx-services.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.server</groupId>
-			<artifactId>realx-rest</artifactId>
-			<version>${realx-rest.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.server</groupId>

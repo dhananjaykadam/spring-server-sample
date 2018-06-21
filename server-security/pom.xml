@@ -8,7 +8,7 @@
 		<artifactId>realx</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>realx-security</artifactId>
+	<artifactId>server-security</artifactId>
 	<name>realx-security</name>
 	<description>user access control</description>
 	<url>http://maven.apache.org</url>

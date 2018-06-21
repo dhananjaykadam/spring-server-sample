@@ -8,18 +8,11 @@
 		<artifactId>realx</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>realx-rest</artifactId>
-	<name>realx-rest</name>
-	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+	<artifactId>server-web</artifactId>
+	<packaging>war</packaging>
+	<name>realx-web</name>
+	
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>com.server</groupId>
 			<artifactId>realx-core</artifactId>
@@ -34,6 +27,11 @@
 			<groupId>com.server</groupId>
 			<artifactId>realx-services</artifactId>
 			<version>${realx-services.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.server</groupId>
+			<artifactId>realx-rest</artifactId>
+			<version>${realx-rest.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.server</groupId>

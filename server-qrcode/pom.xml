@@ -8,11 +8,17 @@
 		<artifactId>realx</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>realx-core</artifactId>
-	<name>realx-core</name>
-	<description>core logic</description>
+	<artifactId>server-qrcode</artifactId>
+	<name>realx-qrcode</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>
